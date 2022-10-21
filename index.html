@@ -1,52 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <div class="page">
+      <div class="buttons">
         <button class="random" id="shuffle">Shuffle and start</button>
-        
-            <input class="check" type="checkbox" id="check" onclick="isChecked()">
-           
-          
-          <p>Moves</p>
-          <div  class="count" data-="data-target">           
-            <span>count</span>
+
+        <div>
+          <!-- <button class="random">Sound oN/oFF</button> -->
+
+          <label class="sound" for="check"
+            >Sound oN/oFF
+            <input
+              class="check"
+              type="checkbox"
+              id="check"
+              onclick="isChecked()"
+            />
+          </label>
         </div>
-        <p>Timer</p>
+      </div>
+
+      <div class="counters">
+        <p class="moves">Moves:</p>
+        <div class="count" data-="data-target">
+          <span>count</span>
+        </div>
+        <p>Time:</p>
         <div class="timer"><span>0</span></div>
-        
-          
+      </div>
 
-        <div class="fifteen" id="fifteen">
-            <button class="item" data-matrix-id="1">1</button>
-            <button class="item" data-matrix-id="2">2</button>
-            <button class="item" data-matrix-id="3">3</button>
-            <button class="item" data-matrix-id="4">4</button>
-            <button class="item" data-matrix-id="5">5</button>
-            <button class="item" data-matrix-id="6">6</button>
-            <button class="item" data-matrix-id="7">7</button>
-            <button class="item" data-matrix-id="8">8</button>
-            <button class="item" data-matrix-id="9">9</button>
-            <button class="item" data-matrix-id="10">10</button>
-            <button class="item" data-matrix-id="11">11</button>
-            <button class="item" data-matrix-id="12">12</button>
-            <button class="item" data-matrix-id="13">13</button>
-            <button class="item" data-matrix-id="14">14</button>
-            <button class="item" data-matrix-id="15">15</button>
-            <button class="item" data-matrix-id="16">я пустой</button>           
-           
-           
-        </div>
-       
+      <div class="fifteen" id="fifteen">
+        <button class="item" data-matrix-id="1" onclick="isChecked()">1</button>
+        <button class="item" data-matrix-id="2" onclick="isChecked()">2</button>
+        <button class="item" data-matrix-id="3" onclick="isChecked()">3</button>
+        <button class="item" data-matrix-id="4" onclick="isChecked()">4</button>
+        <button class="item" data-matrix-id="5" onclick="isChecked()">5</button>
+        <button class="item" data-matrix-id="6" onclick="isChecked()">6</button>
+        <button class="item" data-matrix-id="7" onclick="isChecked()">7</button>
+        <button class="item" data-matrix-id="8" onclick="isChecked()">8</button>
+        <button class="item" data-matrix-id="9" onclick="isChecked()">9</button>
+        <button class="item" data-matrix-id="10" onclick="isChecked()">
+          10
+        </button>
+        <button class="item" data-matrix-id="11" onclick="isChecked()">
+          11
+        </button>
+        <button class="item" data-matrix-id="12" onclick="isChecked()">
+          12
+        </button>
+        <button class="item" data-matrix-id="13" onclick="isChecked()">
+          13
+        </button>
+        <button class="item" data-matrix-id="14" onclick="isChecked()">
+          14
+        </button>
+        <button class="item" data-matrix-id="15" onclick="isChecked()">
+          15
+        </button>
+        <button class="item" data-matrix-id="16" onclick="isChecked()">
+          я пустой
+        </button>
+      </div>
     </div>
-    
-
-    <script src="./main.js"></script>
-</body>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
 </html>
